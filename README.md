@@ -836,5 +836,4 @@ This project represents the journey from learning web development to building pr
 
 **Star ⭐ this repository if you found it helpful!**
 
-Last Updated: January 2025
 
