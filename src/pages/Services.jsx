@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import ServiceCard from '../components/ServiceCard';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import {Link} from "react-router-dom";
 
 const Services = () => {
   const [services, setServices] = useState([]);
@@ -48,7 +49,7 @@ const Services = () => {
       </div>
 
       {/* Services Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {services.map((service) => (
           <ServiceCard key={service.serviceId} service={service} />
         ))}
@@ -60,9 +61,10 @@ const Services = () => {
         <p className="text-gray-600 mb-6">
           Our pet care experts are here to help you find the perfect service for your furry friend.
         </p>
-        <button className="btn btn-primary btn-lg">
+        <Link to="/about" 
+          className="btn btn-primary btn-lg">
           Contact Us Today
-        </button>
+        </Link>
       </div>
     </div>
   );

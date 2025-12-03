@@ -74,47 +74,62 @@ const Footer = () => {
               <span className="block w-12 h-1 bg-[#FF6B35] rounded mt-1"></span>
             </h3>
             <ul className="space-y-3 text-gray-300">
-              <li>
-                <Link to="/" className="hover:text-[#FF6B35] transition-colors">
+              <li className="group flex items-center gap-2 transition-all">
+                <span className="opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 text-[#FF6B35] transition-all duration-300">
+                  ➜
+                </span>
+                <Link
+                  to="/"
+                  className="group-hover:text-[#FF6B35] transition-all duration-300 group-hover:translate-x-1"
+                >
                   Home
                 </Link>
               </li>
-              <li>
+
+              <li className="group flex items-center gap-2 transition-all">
+                <span className="opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 text-[#FF6B35] transition-all duration-300">
+                  ➜
+                </span>
                 <Link
-                  to="/all-pets"
-                  className="hover:text-[#FF6B35] transition-colors"
+                  to="/services"
+                  className="group-hover:text-[#FF6B35] transition-all duration-300 group-hover:translate-x-1"
                 >
                   All Pets
                 </Link>
               </li>
-              <li>
-                <Link
-                  to="/add-pet"
-                  className="hover:text-[#FF6B35] transition-colors"
-                >
-                  Add Pet
-                </Link>
-              </li>
-              <li>
+
+
+              <li className="group flex items-center gap-2 transition-all">
+                <span className="opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 text-[#FF6B35] transition-all duration-300">
+                  ➜
+                </span>
                 <Link
                   to="/donation-campaigns"
-                  className="hover:text-[#FF6B35] transition-colors"
+                  className="group-hover:text-[#FF6B35] transition-all duration-300 group-hover:translate-x-1"
                 >
                   Donation Campaigns
                 </Link>
               </li>
-              <li>
+
+              <li className="group flex items-center gap-2 transition-all">
+                <span className="opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 text-[#FF6B35] transition-all duration-300">
+                  ➜
+                </span>
                 <Link
                   to="/about"
-                  className="hover:text-[#FF6B35] transition-colors"
+                  className="group-hover:text-[#FF6B35] transition-all duration-300 group-hover:translate-x-1"
                 >
                   About Us
                 </Link>
               </li>
-              <li>
+
+              <li className="group flex items-center gap-2 transition-all">
+                <span className="opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 text-[#FF6B35] transition-all duration-300">
+                  ➜
+                </span>
                 <Link
                   to="/contact"
-                  className="hover:text-[#FF6B35] transition-colors"
+                  className="group-hover:text-[#FF6B35] transition-all duration-300 group-hover:translate-x-1"
                 >
                   Contact
                 </Link>
@@ -150,7 +165,9 @@ const Footer = () => {
                 <span>+880 1234 567 890</span>
               </li>
               <li className="flex items-center gap-3 ">
-                <span className=" text-[#FFB84D]"><FaEnvelope /></span>
+                <span className=" text-[#FFB84D]">
+                  <FaEnvelope />
+                </span>
                 <span className="text-white">support@warmpaws.com</span>
               </li>
 
@@ -161,10 +178,14 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Business Hours */}
+          {/* Business hours */}
           <div className="mt-6 p-4 bg-white/10 rounded-lg">
-            <h4 className="font-semibold mb-2 text-[#FFB84D]">Business Hours</h4>
-            <p className="text-sm text-gray-300">Mon - Sat: 9:00 AM - 8:00 PM</p>
+            <h4 className="font-semibold mb-2 text-[#FFB84D]">
+              Business Hours
+            </h4>
+            <p className="text-sm text-gray-300">
+              Mon - Sat: 9:00 AM - 8:00 PM
+            </p>
             <p className="text-sm text-gray-300">Sunday: 10:00 AM - 6:00 PM</p>
             <p className="text-sm text-[#52C41A] font-semibold mt-2">
               24/7 Emergency Care Available

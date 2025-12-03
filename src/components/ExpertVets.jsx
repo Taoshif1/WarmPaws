@@ -1,22 +1,42 @@
 import React from 'react';
-import { FaUserMd, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
+import { FaPhoneAlt } from 'react-icons/fa';
+import toast from 'react-hot-toast';
 
 const ExpertVets = () => {
     const vets = [
-        { name: "Dr. Gazi Taoshif", specialty: "Cold-Weather Nutrition", clinic: "NutriPaws Clinic", photo: "https://i.ibb.co.com/hxTKHBpf/468546934-1243782253559302-2587543065512949540-n.jpg" },
-        { name: "Dr. Mahafuza Moon", specialty: "Emergency Hypothermia", clinic: "RapidVet Services", photo: "https://i.ibb.co.com/xq1C2nTL/Messenger-creation-ce0bee23-4881-4ed1-b410-1e19c6376e1d.jpg" },
-        { name: "Dr. Zhankar Mahbub", specialty: "Dermatology & Paw Care", clinic: "Tender Paws Clinic", photo: "https://i.ibb.co.com/HfGZSj2M/461494518-3927053130903991-1669048447871862858-n.jpg" },
+        { 
+            name: "Dr. Gazi Taoshif", 
+            specialty: "Cold-Weather Nutrition", 
+            clinic: "NutriPaws Clinic", 
+            photo: "https://i.ibb.co.com/hxTKHBpf/468546934-1243782253559302-2587543065512949540-n.jpg",
+            phone: "+8801790000001"
+        },
+        { 
+            name: "Dr. Mahafuza Moon", 
+            specialty: "Emergency Hypothermia", 
+            clinic: "RapidVet Services", 
+            photo: "https://i.ibb.co.com/xq1C2nTL/Messenger-creation-ce0bee23-4881-4ed1-b410-1e19c6376e1d.jpg",
+            phone: "+8801790000002"
+        },
+        { 
+            name: "Dr. Zhankar Mahbub", 
+            specialty: "Dermatology & Paw Care", 
+            clinic: "Tender Paws Clinic", 
+            photo: "https://i.ibb.co.com/HfGZSj2M/461494518-3927053130903991-1669048447871862858-n.jpg",
+            phone: "+8801790000003"
+        },
     ];
+
+    const handleConsult = (phone, name) => {
+        toast.success(`Calling ${name}...`);
+        window.location.href = `tel:${phone}`;
+    };
 
     return (
         <section className="max-w-7xl mx-auto px-4 -mt-5 py-16 mb-16" data-aos="fade-up">
             <div className="text-center mb-12">
-                <h2 className="text-4xl font-bold mb-4">
-                    Meet Our Expert Winter Vets
-                </h2>
-                <p className="text-gray-600">
-                    Trusted professionals specialized in seasonal pet care.
-                </p>
+                <h2 className="text-4xl font-bold mb-4">Meet Our Expert Winter Vets</h2>
+                <p className="text-gray-600">Trusted professionals specialized in seasonal pet care.</p>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -33,8 +53,12 @@ const ExpertVets = () => {
                             <h2 className="card-title text-2xl font-bold">{vet.name}</h2>
                             <p className="text-primary font-semibold text-lg">{vet.specialty}</p>
                             <p className="text-gray-500 mb-4">{vet.clinic}</p>
+
                             <div className="card-actions">
-                                <button className="btn btn-sm btn-outline btn-primary">
+                                <button 
+                                    className="btn btn-sm btn-outline btn-primary"
+                                    onClick={() => handleConsult(vet.phone, vet.name)}
+                                >
                                     <FaPhoneAlt /> Consult Now
                                 </button>
                             </div>

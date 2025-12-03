@@ -11,16 +11,18 @@ import ExpertVets from "../components/ExpertVets";
 import Testimonials from "../components/Testimonials";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { 
-  FaPaw, 
-  FaHeart, 
-  FaShieldAlt, 
+import { Toaster } from "react-hot-toast";
+import {
+  FaPaw,
+  FaHeart,
+  FaShieldAlt,
   FaUserMd,
   FaEnvelope,
   FaArrowRight,
   FaDonate,
-  FaNewspaper 
+  FaNewspaper,
 } from "react-icons/fa";
+import NewsletterSubscribe from "../components/NewsletterSubscribe";
 
 const Home = () => {
   const [services, setServices] = useState([]);
@@ -78,9 +80,13 @@ const Home = () => {
                     Keep Your Pets Warm This Winter ❄️
                   </h1>
                   <p className="mb-8 text-lg md:text-xl">
-                    Expert winter care services for your beloved furry friends. Safe, cozy, and professional care.
+                    Expert winter care services for your beloved furry friends.
+                    Safe, cozy, and professional care.
                   </p>
-                  <Link to="/all-pets" className="btn bg-[#FF6B35] hover:bg-[#E55A2B] text-white border-none btn-lg normal-case">
+                  <Link
+                    to="/services"
+                    className="btn bg-[#FF6B35] hover:bg-[#E55A2B] text-white border-none btn-lg normal-case"
+                  >
                     Explore Services
                     <FaArrowRight className="ml-2" />
                   </Link>
@@ -104,9 +110,13 @@ const Home = () => {
                     Winter Wellness for Cats 🐱
                   </h1>
                   <p className="mb-8 text-lg md:text-xl">
-                    Specialized care and cozy shelters to keep your feline friends comfortable all winter long.
+                    Specialized care and cozy shelters to keep your feline
+                    friends comfortable all winter long.
                   </p>
-                  <Link to="/all-pets" className="btn bg-[#4A90E2] hover:bg-[#3A7BC8] text-white border-none btn-lg normal-case">
+                  <Link
+                    to="/services"
+                    className="btn bg-[#4A90E2] hover:bg-[#3A7BC8] text-white border-none btn-lg normal-case"
+                  >
                     Book Now
                     <FaHeart className="ml-2" />
                   </Link>
@@ -130,9 +140,13 @@ const Home = () => {
                     24/7 Emergency Care 🚑
                   </h1>
                   <p className="mb-8 text-lg md:text-xl">
-                    Round-the-clock winter emergency services. Your pet's safety is our priority.
+                    Round-the-clock winter emergency services. Your pet's safety
+                    is our priority.
                   </p>
-                  <Link to="/contact" className="btn bg-[#52C41A] hover:bg-[#45A517] text-white border-none btn-lg normal-case">
+                  <Link
+                    to="/contact"
+                    className="btn bg-[#52C41A] hover:bg-[#45A517] text-white border-none btn-lg normal-case"
+                  >
                     Contact Us
                     <FaUserMd className="ml-2" />
                   </Link>
@@ -156,13 +170,29 @@ const Home = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-18">
           {[
-            { icon: FaPaw, title: "Expert Care", desc: "Certified professionals with years of experience" },
-            { icon: FaHeart, title: "24/7 Support", desc: "Always here when your pet needs us most" },
-            { icon: FaShieldAlt, title: "Safe & Secure", desc: "Top-quality facilities and equipment" },
-            { icon: FaUserMd, title: "Licensed Vets", desc: "Qualified veterinarians on staff" },
+            {
+              icon: FaPaw,
+              title: "Expert Care",
+              desc: "Certified professionals with years of experience",
+            },
+            {
+              icon: FaHeart,
+              title: "24/7 Support",
+              desc: "Always here when your pet needs us most",
+            },
+            {
+              icon: FaShieldAlt,
+              title: "Safe & Secure",
+              desc: "Top-quality facilities and equipment",
+            },
+            {
+              icon: FaUserMd,
+              title: "Licensed Vets",
+              desc: "Qualified veterinarians on staff",
+            },
           ].map((feature, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="card bg-white shadow-lg hover:shadow-xl transition-all p-6 text-center border-t-4 border-[#FF6B35]"
             >
               <feature.icon className="text-5xl text-[#FF6B35] mx-auto mb-4" />
@@ -191,8 +221,8 @@ const Home = () => {
         </div>
 
         <div className="text-center mt-10 mb-5">
-          <Link 
-            to="/all-pets" 
+          <Link
+            to="/services"
             className="btn bg-[#FF6B35] hover:bg-[#E55A2B] text-white border-none btn-lg normal-case"
           >
             View All Services
@@ -217,17 +247,18 @@ const Home = () => {
                 Support Street Animals This Winter
               </h2>
               <p className="text-xl mb-6 opacity-90">
-                Your donation helps provide warm shelters, food, and medical care to homeless pets during harsh winter months.
+                Your donation helps provide warm shelters, food, and medical
+                care to homeless pets during harsh winter months.
               </p>
               <div className="flex gap-4">
-                <Link 
-                  to="/donation-campaigns" 
+                <Link
+                  to="/donation-campaigns"
                   className="btn bg-white text-[#FF6B35] hover:bg-gray-100 border-none btn-lg normal-case"
                 >
                   Donate Now
                 </Link>
-                <Link 
-                  to="/about" 
+                <Link
+                  to="/about"
                   className="btn btn-outline border-white text-white hover:bg-white hover:text-[#FF6B35] btn-lg normal-case"
                 >
                   Learn More
@@ -254,36 +285,8 @@ const Home = () => {
       <Testimonials />
 
       {/* 8. Newsletter/Blog Section */}
-      <section className="container-custom mb-20" data-aos="fade-up">
-        <div className="bg-gradient-to-br from-[#4A90E2] to-[#6BA8E8] rounded-3xl p-12 text-white shadow-2xl">
-          <div className="max-w-3xl mx-auto text-center">
-            <FaNewspaper className="text-6xl mx-auto mb-6" />
-            <h2 className="text-4xl font-bold mb-4">
-              Stay Updated with Pet Care Tips
-            </h2>
-            <p className="text-xl mb-8 opacity-90">
-              Subscribe to our newsletter for expert advice, seasonal care tips, and exclusive offers for your furry friends.
-            </p>
-            <form onSubmit={handleNewsletterSubmit} className="flex gap-4 max-w-xl mx-auto">
-              <input 
-                type="email" 
-                placeholder="Enter your email" 
-                className="input input-lg flex-grow text-gray-800"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-              />
-              <button type="submit" className="btn bg-[#FF6B35] hover:bg-[#E55A2B] text-white border-none btn-lg normal-case">
-                <FaEnvelope className="mr-2" />
-                Subscribe
-              </button>
-            </form>
-            <p className="text-sm mt-4 opacity-75">
-              Join 5,000+ pet parents receiving our weekly care tips
-            </p>
-          </div>
-        </div>
-      </section>
+      <NewsletterSubscribe></NewsletterSubscribe>
+
     </div>
   );
 };
