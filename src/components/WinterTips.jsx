@@ -10,8 +10,8 @@ const WinterTips = () => {
     ];
 
     return (
-        <section className="max-w-7xl mx-auto px-4 py-16 bg-base-200 rounded-xl mb-16" data-aos="fade-up">
-            <div className="text-center mb-12">
+        <section className="max-w-7xl mx-auto px-4 bg-base-200 rounded-xl my-20" data-aos="fade-up">
+            <div className="text-center mb-8">
                 <h2 className="text-4xl font-bold mb-4">
                     Essential Winter Care Tips
                 </h2>

@@ -6,7 +6,7 @@ import { Outlet } from 'react-router-dom';
 const HomeLayout = () => {
     return (
         <div className='flex flex-col min-h-screen'>
-            <header className='sticky top-0 z-50'> {/* Make Navbar sticky */}
+            <header className='sticky top-0 z-50'>
                 <Navbar />
             </header>
 

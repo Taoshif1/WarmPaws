@@ -9,7 +9,7 @@ const ExpertVets = () => {
     ];
 
     return (
-        <section className="max-w-7xl mx-auto px-4 py-16 mb-16" data-aos="fade-up">
+        <section className="max-w-7xl mx-auto px-4 -mt-5 py-16 mb-16" data-aos="fade-up">
             <div className="text-center mb-12">
                 <h2 className="text-4xl font-bold mb-4">
                     Meet Our Expert Winter Vets

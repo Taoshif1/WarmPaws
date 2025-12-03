@@ -5,7 +5,7 @@ const Testimonials = () => {
     const reviews = [
         {
             text: "WarmPaws coat fitting service was a lifesaver. My golden retriever is happier and warmer than ever on his winter walks!",
-            name: "Sarah J.",
+            name: "Ahmed J.",
             pet: "Buddy (Golden Retriever)",
         },
         {
@@ -21,8 +21,8 @@ const Testimonials = () => {
     ];
 
     return (
-        <section className="max-w-7xl mx-auto px-4 py-16 mb-16" data-aos="fade-up">
-            <div className="text-center mb-12">
+        <section className="max-w-7xl mx-auto px-4 py-20 mb-16" data-aos="fade-up">
+            <div className="text-center mb-10">
                 <h2 className="text-4xl font-bold mb-4">
                     What Our Customers Say
                 </h2>

@@ -1,2 +1,165 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* WarmPaws Primary & Secondary Colors */
+:root {
+  /* Primary Color - Warm Orange */
+  --primary-color: #FF6B35;
+  --primary-dark: #E55A2B;
+  --primary-light: #FF8C61;
+  
+  /* Secondary Color - Soft Blue */
+  --secondary-color: #4A90E2;
+  --secondary-dark: #3A7BC8;
+  --secondary-light: #6BA8E8;
+  
+  /* Accent Colors */
+  --accent-warm: #FFB84D;
+  --accent-green: #52C41A;
+  
+  /* Neutral Colors */
+  --text-primary: #2C3E50;
+  --text-secondary: #7F8C8D;
+  --bg-light: #F8F9FA;
+  --bg-white: #FFFFFF;
+  
+  /* Border & Shadow */
+  --border-color: #E8EAED;
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Dark Mode Colors */
+[data-theme="dark"] {
+  --text-primary: #E8EAED;
+  --text-secondary: #B0B8C1;
+  --bg-light: #1A1D23;
+  --bg-white: #25282E;
+  --border-color: #3A3F47;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: var(--bg-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-dark);
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Body Styles */
+body {
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-primary);
+  background-color: var(--bg-light);
+}
+
+/* Custom Utility Classes */
+.text-primary-color {
+  color: var(--primary-color);
+}
+
+.bg-primary-color {
+  background-color: var(--primary-color);
+}
+
+.bg-secondary-color {
+  background-color: var(--secondary-color);
+}
+
+.btn-primary-custom {
+  background-color: var(--primary-color);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-secondary-custom {
+  background-color: var(--secondary-color);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary-custom:hover {
+  background-color: var(--secondary-dark);
+  transform: translateY(-2px);
+}
+
+/* Card Styles */
+.card-custom {
+  background: var(--bg-white);
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+}
+
+.card-custom:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-5px);
+}
+
+/* Section Spacing */
+.section-padding {
+  padding: 80px 0;
+}
+
+.container-custom {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .container-custom {
+    padding: 0 40px;
+  }
+}
+
+/* Animation Classes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Focus Styles for Accessibility */
+button:focus,
+a:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}

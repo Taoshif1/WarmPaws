@@ -70,5 +70,29 @@
     "description": "Urgent assessment and immediate warming procedures for cold-exposed pets.",
     "image": "https://i.ibb.co.com/Q7HJ6Q1g/pexels-tima-miroshnichenko-6235114.jpg",
     "category": "Emergency"
+  },
+  {
+    "serviceId": 7,
+    "serviceName": "Heated Dog Bed Rental",
+    "providerName": "CozyCorners",
+    "providerEmail": "rent@cozycorners.com",
+    "price": 12,
+    "rating": 4.75,
+    "slotsAvailable": 5,
+    "description": "Rent a heated bed to keep your dog warm and comfortable during chilly nights.",
+    "image": "https://hips.hearstapps.com/hmg-prod/images/best-dog-beds-64f06e473fd45.jpeg?crop=1xw:0.84375xh;center,top&resize=1200:*",
+    "category": "Daycare"
+  },
+  {
+    "serviceId": 8,
+    "serviceName": "Winter Paw Massage",
+    "providerName": "Pawfect Therapy",
+    "providerEmail": "therapy@pawfect.com",
+    "price": 22,
+    "rating": 4.8,
+    "slotsAvailable": 3,
+    "description": "Gentle paw massage with warm oils to improve circulation and soothe winter dryness.",
+    "image": "https://cdn.shopify.com/s/files/1/0746/3347/8459/files/dog_massage_benefits_techniques_paw_cbd_image_1.jpg",
+    "category": "Treatment"
   }
 ]

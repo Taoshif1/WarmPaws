@@ -10,6 +10,7 @@ import Login from '../pages/Login';
 import Register from '../pages/Register';
 import ServiceDetails from '../pages/ServiceDetails'; 
 import ForgotPassword from '../pages/ForgotPassword'; 
+import AllPets from '../pages/AllPets';
 
 const router = createBrowserRouter([
   {
@@ -54,6 +55,10 @@ const router = createBrowserRouter([
       {
         path: "/forgot-password",
         element: <ForgotPassword />,
+      },
+      {
+        path: "/all-pets",
+        element: <AllPets />,
       },
     ],
   },
