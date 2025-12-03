@@ -1,0 +1,74 @@
+[
+  {
+    "serviceId": 1,
+    "serviceName": "Winter Coat Fitting for Dogs",
+    "providerName": "PawCare Studio",
+    "providerEmail": "info@pawcare.com",
+    "price": 25,
+    "rating": 4.9,
+    "slotsAvailable": 4,
+    "description": "Custom coat fitting and warm outfit options to keep your dog comfortable in the cold.",
+    "image": "https://i.ibb.co.com/Y4TgdLMj/pexels-skyler-ewing-266953-4597759.jpg",
+    "category": "Clothing"
+  },
+  {
+    "serviceId": 2,
+    "serviceName": "Paw Moisturizing Therapy",
+    "providerName": "Tender Paws Clinic",
+    "providerEmail": "care@tenderpaws.com",
+    "price": 18,
+    "rating": 4.7,
+    "slotsAvailable": 5,
+    "description": "Paw balm application and protective boot fitting to prevent cracking on icy surfaces.",
+    "image": "https://i.ibb.co.com/YFzKTbdc/pexels-mikhail-nilov-7474853.jpg",
+    "category": "Treatment"
+  },
+  {
+    "serviceId": 3,
+    "serviceName": "Winter Grooming",
+    "providerName": "CozyPets Grooming",
+    "providerEmail": "hello@cozypets.com",
+    "price": 30,
+    "rating": 4.8,
+    "slotsAvailable": 3,
+    "description": "Professional grooming with moisturizing paw balm and winter-safe shampoo.",
+    "image": "https://i.ibb.co.com/7tLzrfxP/j-balla-photography-F57x-Lufncj8-unsplash.jpg",
+    "category": "Grooming"
+  },
+  {
+    "serviceId": 4,
+    "serviceName": "Indoor Play & Warm-Up Session",
+    "providerName": "WarmTails Daycare",
+    "providerEmail": "play@warmtails.com",
+    "price": 20,
+    "rating": 4.6,
+    "slotsAvailable": 6,
+    "description": "Supervised indoor play in heated rooms with recovery hot-packs and cozy bedding.",
+    "image": "https://i.ibb.co.com/35PXz77Y/pexels-ron-lach-9986351.jpg",
+    "category": "Daycare"
+  },
+  {
+    "serviceId": 5,
+    "serviceName": "Cold-Weather Nutrition Plan",
+    "providerName": "NutriPaws",
+    "providerEmail": "nutrition@nutripaws.com",
+    "price": 35,
+    "rating": 4.85,
+    "slotsAvailable": 2,
+    "description": "Personalized diet plan to boost metabolism and maintain body heat during winter months.",
+    "image": "https://i.ibb.co.com/GGysW42/pexels-thatguycraig000-1546911.jpg",
+    "category": "Nutrition"
+  },
+  {
+    "serviceId": 6,
+    "serviceName": "Emergency Hypothermia Check & Care",
+    "providerName": "RapidVet Services",
+    "providerEmail": "help@rapidvet.com",
+    "price": 50,
+    "rating": 4.95,
+    "slotsAvailable": 1,
+    "description": "Urgent assessment and immediate warming procedures for cold-exposed pets.",
+    "image": "https://i.ibb.co.com/Q7HJ6Q1g/pexels-tima-miroshnichenko-6235114.jpg",
+    "category": "Emergency"
+  }
+]
